@@ -1,0 +1,39 @@
+\documentclass{article}
+\begin{document}
+\title{Probability Hardware Assignment}
+\author{Shruti Khandelwal || BT22BTECH11015}
+\maketitle
+
+\section{Abstract}
+This report presents a detailed description and implementation of a Python audio player program that shuffles a playlist and ensures that all songs are played before the playlist is looped. The program utilizes the pygame library for audio playback and the random library for shuffling the playlist. The report provides an overview of the code structure, explains the key functionalities, and discusses potential improvements.
+\section{Introduction}
+The Python audio player program is designed to provide a user-friendly interface for playing audio files in a shuffled order. The main goal of the program is to ensure that all songs in the playlist are covered before the playlist is looped, providing a varied listening experience.
+
+\section{Code Structure:}
+The program follows a straightforward structure:
+\begin{itemize}
+     \item Importing the required libraries (pygame, os, and random) to handle audio playback, file manipulation, and randomization.
+     \item Defining the path to the directory containing the audio files.
+      \item Retrieving a list of all audio files in the specified directory.
+       \item Shuffling the list of audio files randomly.
+      \item Initializing the pygame.mixer module for audio playback.
+       \item Iterating through the shuffled list of audio files.
+        \item Loading each audio file using pygame.mixer.Sound.
+        \item Playing the audio file using the play() method.
+        \item Waiting until the audio has finished playing before proceeding to the next file.
+        \item Once all the files have been played, the program terminates.
+ \end{itemize}
+
+\section{Key Functionalities:}
+ The Python audio player program offers the following key functionalities:
+ \begin{itemize}
+     \item Shuffling the playlist: The program randomly shuffles the list of audio files, ensuring a different order of playback each time it is run. This adds variety and unpredictability to the listening experience.
+     \item Complete coverage of songs: The program ensures that all songs in the shuffled playlist are played before the playlist is looped. This guarantees that every song gets included in the playback session.
+ \end{itemize}
+
+
+\section{Conclusion}
+ The Python audio player program presented in this report provides a simple solution for playing audio files in a shuffled order. By leveraging the pygame and random libraries, the program offers an enjoyable and dynamic listening experience. While the current implementation is basic, there is potential for further enhancements, such as incorporating a graphical user interface and playlist management features.
+
+\end{document}
+
